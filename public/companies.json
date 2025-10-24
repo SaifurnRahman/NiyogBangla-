@@ -1,0 +1,313 @@
+[
+  {
+    "id": "1",
+    "name": "Grameenphone",
+    "logo": "https://logo.clearbit.com/grameenphone.com",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.grameenphone.com",
+    "industry": "Telecommunications",
+    "jobs": [
+      {
+        "id": "job-001",
+        "title": "Network Operations Engineer",
+        "bannerImage": "https://i.ibb.co.com/360wXfY/OIP.jpg",
+        "location": "Dhaka HQ",
+        "salary": "৳70,000 – ৳100,000 / month",
+        "jobType": "Full‑time",
+        "description": "Maintain network infrastructure, ensure uptime, and coordinate with field teams.",
+        "requirements": [
+          "Degree in Electrical or Telecom Engineering",
+          "Knowledge of routers and switches",
+          "CCNA certification preferred",
+          "Good troubleshooting skills"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Robi Axiata",
+    "logo": "https://logo.clearbit.com/robi.com.bd",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.robi.com.bd",
+    "industry": "Telecommunications",
+    "jobs": [
+      {
+        "id": "job-002",
+        "title": "Data Analyst",
+        "bannerImage": "https://i.ibb.co.com/CKrnMZMh/3959390.jpg",
+        "location": "Hybrid (Dhaka)",
+        "salary": "৳60,000 – ৳85,000 / month",
+        "jobType": "Full‑time",
+        "description": "Analyze customer usage patterns and generate insights for marketing decisions.",
+        "requirements": [
+          "Strong SQL and Excel skills",
+          "Experience in Power BI or Tableau",
+          "Python / R proficiency",
+          "Excellent communication ability"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "bKash",
+    "logo": "https://logo.clearbit.com/bkash.com",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.bkash.com",
+    "industry": "FinTech",
+    "jobs": [
+      {
+        "id": "job-003",
+        "title": "Software Engineer – Backend",
+        "bannerImage": "https://i.ibb.co.com/chTcfJJ7/mobile-app-developer-skills.jpg",
+        "location": "Dhaka HQ",
+        "salary": "৳90,000 – ৳120,000 / month",
+        "jobType": "Full‑time",
+        "description": "Design and build secure, scalable payment microservices.",
+        "requirements": [
+          "Experience with Node.js / Java / Go",
+          "Knowledge of RESTful APIs",
+          "Database design in PostgreSQL",
+          "Unit testing and CI/CD awareness"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Pathao",
+    "logo": "https://logo.clearbit.com/pathao.com",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.pathao.com",
+    "industry": "Ride‑Sharing / Delivery",
+    "jobs": [
+      {
+        "id": "job-004",
+        "title": "Frontend Developer",
+        "bannerImage": "https://i.ibb.co.com/27Q5RL8p/front-end-developer-1600x900-1.jpg",
+        "location": "Remote",
+        "salary": "৳55,000 – ৳75,000 / month",
+        "jobType": "Full‑time",
+        "description": "Implement responsive UI for Pathao’s user dashboard.",
+        "requirements": [
+          "Proficiency in React and Tailwind CSS",
+          "Experience with REST APIs",
+          "Attention to design detail",
+          "Team collaboration skills"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Shohoz",
+    "logo": "https://logo.clearbit.com/shohoz.com",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.shohoz.com",
+    "industry": "Transport / Ticketing",
+    "jobs": [
+      {
+        "id": "job-005",
+        "title": "UI/UX Designer",
+        "bannerImage": "https://i.ibb.co.com/v6wQfNnT/wp11742795.jpg",
+        "location": "Dhaka Office",
+        "salary": "৳45,000 – ৳65,000 / month",
+        "jobType": "Full‑time",
+        "description": "Design clean, intuitive interfaces for the Shohoz app and website.",
+        "requirements": [
+          "Experience with Figma or Adobe XD",
+          "Understanding of user‑centered design",
+          "Portfolio of prior work",
+          "Comfortable with agile workflow"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Daraz",
+    "logo": "https://logo.clearbit.com/daraz.com.bd",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.daraz.com.bd",
+    "industry": "E‑Commerce",
+    "jobs": [
+      {
+        "id": "job-006",
+        "title": "Digital Marketing Specialist",
+        "bannerImage": "https://i.ibb.co.com/nM3k3QWG/shutterstock-1029362278-1.jpg",
+        "location": "Hybrid",
+        "salary": "৳50,000 – ৳70,000 / month",
+        "jobType": "Full‑time",
+        "description": "Manage online marketing campaigns and optimize conversions.",
+        "requirements": [
+          "Experience in Google Ads & Meta Business Suite",
+          "SEO/SEM knowledge",
+          "Analytical mindset",
+          "Bachelor’s degree in Marketing or related field"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Chaldal",
+    "logo": "https://logo.clearbit.com/chaldal.com",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.chaldal.com",
+    "industry": "Online Grocery",
+    "jobs": [
+      {
+        "id": "job-007",
+        "title": "Warehouse Operations Executive",
+        "bannerImage": "https://i.ibb.co.com/Q0gXkDh/warehouse-manager-job-description.jpg",
+        "location": "Dhaka Warehouse",
+        "salary": "৳35,000 – ৳50,000 / month",
+        "jobType": "Full‑time",
+        "description": "Supervise product flow and ensure timely delivery processing.",
+        "requirements": [
+          "Experience in inventory management",
+          "Ability to lead a small team",
+          "Basic Excel knowledge",
+          "Shift flexibility"
+        ]
+      },
+      {
+        "id": "job-008",
+        "title": "Graphic Designer",
+        "bannerImage": "https://i.ibb.co.com/7J9JytWQ/Graphic-Design-for-Beginners.png",
+        "location": "Remote",
+        "salary": "৳35,000 - ৳50,000/month",
+        "jobType": "Full-time",
+        "description": "Design marketing visuals, social media assets, and branding materials for clients.",
+        "requirements": [
+          "Proficiency in Adobe Illustrator & Photoshop",
+          "Strong sense of typography and layout",
+          "Portfolio of previous work",
+          "Creative mindset and attention to detail"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "BRAC IT Services",
+    "logo": "https://logo.clearbit.com/bracits.com",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.bracits.com",
+    "industry": "Information Technology / Consulting",
+    "jobs": [
+      {
+        "id": "job-009",
+        "title": "Project Manager – Software",
+        "bannerImage": "https://i.ibb.co.com/xSHVpDcv/OIP.jpg",
+        "location": "On‑site (Dhaka)",
+        "salary": "৳80,000 – ৳110,000 / month",
+        "jobType": "Full‑time",
+        "description": "Lead cross‑functional software teams, ensuring delivery on time and budget.",
+        "requirements": [
+          "5+ years project management experience",
+          "Agile & Scrum knowledge",
+          "Technical background preferred",
+          "Excellent leadership and communication"
+        ]
+      },
+      {
+        "id": "job-010",
+        "title": "IoT Engineer",
+        "bannerImage": "https://i.ibb.co.com/WNWvJL8R/industrial-engineer-using-iot-dashboards-optimize-processes-818261-75445.jpg",
+        "location": "Rangpur HQ",
+        "salary": "৳55,000 - ৳75,000/month",
+        "jobType": "Full-time",
+        "description": "Design and implement IoT solutions to enhance agricultural productivity and sustainability.",
+        "requirements": [
+          "Experience with Arduino/Raspberry Pi",
+          "Knowledge of sensor integration",
+          "Basic understanding of cloud platforms",
+          "Strong debugging skills",
+          "Degree in Electrical/Computer Engineering"
+        ]
+      },
+      {
+        "id": "job-011",
+        "title": "Field Data Technician",
+        "bannerImage": "https://i.ibb.co.com/zV5Xczdw/ABB-Ability-Field-Information-Manager-serves-as-the-bridge-between-IT-and-OT-to-enable-data-driven-d.jpg",
+        "location": "Rural field sites",
+        "salary": "৳25,000 - ৳35,000/month",
+        "jobType": "Contract",
+        "description": "Collect data from IoT sensors and ensure reliable field connectivity.",
+        "requirements": [
+          "Basic knowledge of electronics",
+          "Ability to travel to rural areas",
+          "Good communication in Bangla and English",
+          "Responsible and self-motivated"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Bdjobs",
+    "logo": "https://logo.clearbit.com/bdjobs.com",
+    "location": "Dhaka, Bangladesh",
+    "website": "https://www.bdjobs.com",
+    "industry": "Online Recruitment",
+    "jobs": [
+      {
+        "id": "job-012",
+        "title": "Customer Success Executive",
+        "bannerImage": "https://i.ibb.co.com/nNfDkyKM/OIP.jpg",
+        "location": "Dhaka HQ",
+        "salary": "৳30,000 – ৳45,000 / month",
+        "jobType": "Full‑time",
+        "description": "Provide onboarding and support for employer accounts on Bdjobs platform.",
+        "requirements": [
+          "Strong verbal / written communication",
+          "Customer service experience",
+          "Basic understanding of recruiting systems",
+          "Team‑oriented attitude"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Walton",
+    "logo": "https://logo.clearbit.com/waltonbd.com",
+    "location": "Gazipur, Bangladesh",
+    "website": "https://www.waltonbd.com",
+    "industry": "Electronics / Manufacturing",
+    "jobs": [
+      {
+        "id": "job-013",
+        "title": "Mechanical Design Engineer",
+        "bannerImage": "https://i.ibb.co.com/27wr147c/Mechanical-design-engineer-career.jpg",
+        "location": "Walton Factory, Gazipur",
+        "salary": "৳65,000 – ৳95,000 / month",
+        "jobType": "Full‑time",
+        "description": "Design and improve components for consumer electronics products.",
+        "requirements": [
+          "B.Sc. in Mechanical Engineering",
+          "Experience with SolidWorks / AutoCAD",
+          "Knowledge of manufacturing processes",
+          "Analytical and creative thinking"
+        ]
+      },
+      {
+        "id": "job-014",
+        "title": "Electrical Engineer",
+        "bannerImage": "https://i.ibb.co.com/GQhbbk61/Be-Your-Bold-Blog-Engineering.jpg",
+        "location": "Barisal HQ",
+        "salary": "৳65,000 - ৳95,000/month",
+        "jobType": "Full-time",
+        "description": "Design and maintain renewable energy systems with focus on solar grids.",
+        "requirements": [
+          "Degree in Electrical Engineering",
+          "Experience with solar systems",
+          "Project management capabilities",
+          "Knowledge of safety standards"
+        ]
+      }
+    ]
+  }
+]
