@@ -9,8 +9,8 @@ const Navbar = () => {
     const Links =
     <>
     <li><Link to='/'>Home</Link></li>
-    <li><Link to='login'>Find Jobs</Link></li>
-    <li><Link to='register'>Hiring Sites</Link></li>
+    <li><Link to='/findjobs'>Find Jobs</Link></li>
+    <li><Link to='/hiring'>Hiring Sites</Link></li>
     </>
     return (
         <div>
