@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { use, useState } from 'react';
 import { Link, NavLink } from 'react-router';
 import logo from '../assets/LOGO.png'
+import { AuthContext } from '../Provider/AuthProvider';
+import person from '../assets/user.png'
+import { FaCircleUser } from "react-icons/fa6";
 
 const Navbar = () => {
 
+  const {user, logOut} = use(AuthContext);
+  const [open, setOpen] = useState(false)
+
+  const handleLogOut = (e) => {
+
+    logOut()
+    .then(()=> {
+      alert('you logger out Successfully')
+    })
+    .catch((error)=> {
+      console.log(error);
+    })
+  }
 
 
     const Links =
@@ -34,8 +50,38 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <Link to='/auth/login' className="btn bg-primary text-white font-bold rounded-lg mr-3">Login</Link>
-    <Link to='/auth/registration ' className="btn border-3 bg-white font-bold border-blue-600 text-blue-600 rounded-lg">Registration </Link>
+    {
+      user ? 
+      (
+        <div className='flex gap-2 justify-center items-center relative'>
+        
+          <button
+          onClick={()=> setOpen(!open)}
+           className='text-4xl text-blue-600 flex items-center justify-center rounded-full hover:text-blue-300 transition'>
+            {user?.photoURL ?  (<img  src={user.photoURL} alt="User profile" />) : <FaCircleUser />}
+            </button>
+
+           <div>
+            {
+              open && ( 
+              <ul className='absolute right-0 mt-7 w-40 bg-white border border-gray-200 rounded-lg shadow-lg text-xl p-2'>
+                <li className='hover:bg-blue-600 p-1 hover:text-white font-semibold text-gray-500 transition'><Link to='/myprofile'>My Profile</Link></li>
+                <li onClick={handleLogOut} className='hover:bg-blue-600 p-1 hover:text-white font-semibold text-gray-500 transition'><Link>Log Out</Link></li>
+              
+              </ul>
+                
+              )
+            }
+           </div>
+
+        </div>
+       ) :
+       (
+        <div><Link to='/auth/login' className="btn bg-primary text-white font-bold rounded-lg mr-3">Login</Link>
+    <Link to='/auth/registration' className="btn border-3 bg-white font-bold border-blue-600 text-blue-600 rounded-lg">Registration </Link></div>
+      )
+    }
+    
   </div>
 </div>
         </div>

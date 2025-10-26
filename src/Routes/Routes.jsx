@@ -4,6 +4,8 @@ import HomeLayout from "../layouts/HomeLayout";
 import CompanyDetails from "../Pages/CompanyDetails";
 import AuthLayout from "../layouts/AuthLayout";
 import Login from "../Pages/Login";
+import Register from "../Pages/Register";
+import MyProfile from "../Pages/MyProfile";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ export const router = createBrowserRouter([
         path: "/auth/login",
         element: <Login />,
       },
+      {
+        path : '/auth/registration',
+        element: <Register></Register>
+      }
     ],
   },
+  {
+    path: '/myprofile',
+    element: <MyProfile></MyProfile>
+  }
 ]);

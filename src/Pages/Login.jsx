@@ -1,16 +1,31 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
-import { Link, Links } from "react-router";
+import { Link, Links, useNavigate } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
  
+    const {logInUser} = use(AuthContext);
+    const navigate = useNavigate();
+    const [error, setError] = useState('')
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value
-    console.log(email, password);
+
+    logInUser(email, password)
+    .then((result) => {
+        console.log(result);
+        navigate('/')
+
+    })
+    .catch((error)=> {
+        const errorCode = error.code;
+        setError(errorCode);
+    })
+
   };
 
   return (
@@ -19,7 +34,7 @@ const Login = () => {
       <div className="md:w-1/2 w-full flex items-center justify-center">
         <div className="w-full max-w-md bg-white rounded-2xl shadow-md p-8">
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-2">
-            Welcome Back
+            Login Your Account
           </h1>
           <p className="text-center text-gray-500 mb-8">
             Sign in to continue your journey with NiyogBangla
@@ -57,6 +72,10 @@ const Login = () => {
                 Forgot password?
               </a>
             </div>
+            
+            {
+                error && <p className="text-red-500 text-left text-sm">{error}</p>
+            }
 
             <button
               type="submit"
