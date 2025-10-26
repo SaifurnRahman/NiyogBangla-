@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { FaCamera, FaEnvelope, FaLock, FaUser } from "react-icons/fa";
 import { Link, Links, useNavigate } from "react-router";
 import { AuthContext } from '../Provider/AuthProvider';
@@ -7,7 +7,8 @@ import { FaDebian } from 'react-icons/fa6';
 
 
 const MyProfile = () => {
-    const {updateUser, user, setUser} = use(AuthContext);
+    const {updateUser, user, setUser} = use(AuthContext)
+    const [isUpdated, setIsUpdated] = useState(false);
 
     const handleUpdate =(e)=> {
          e.preventDefault()
@@ -19,6 +20,8 @@ const MyProfile = () => {
         updateUser({displayName: name, photoURL: photo, phoneNumber : number})
         .then(()=> {
             setUser({...user, displayName: name, photoURL: photo, phoneNumber : number })
+            setIsUpdated(true);
+            setTimeout(()=> setIsUpdated(false), 3000)
         })
        .catch((error) => {
         console.log(error);
@@ -43,6 +46,11 @@ const MyProfile = () => {
           </p>
 
           <form onSubmit={handleUpdate} className="space-y-6">
+            {
+                isUpdated && (<div className="mb-4 text-center text-green-600 font-medium">
+                    Profile updated successfully!
+                </div>)
+            }
            
             <div className="relative">
               <FaUser className="absolute left-3 top-3 text-gray-400" />
