@@ -1,6 +1,6 @@
 import React, { use, useState } from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
-import { Link, Links, useNavigate } from "react-router";
+import { Link, Links, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
@@ -8,6 +8,7 @@ const Login = () => {
     const {logInUser} = use(AuthContext);
     const navigate = useNavigate();
     const [error, setError] = useState('')
+    const location = useLocation()
 
 
   const handleSubmit = (e) => {
@@ -18,7 +19,7 @@ const Login = () => {
     logInUser(email, password)
     .then((result) => {
         console.log(result);
-        navigate('/')
+        navigate(`${location.state ? location.state : '/'}`)
 
     })
     .catch((error)=> {

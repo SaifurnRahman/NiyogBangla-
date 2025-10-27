@@ -58,7 +58,7 @@ const Navbar = () => {
           <button
           onClick={()=> setOpen(!open)}
            className='text-4xl text-blue-600 flex items-center justify-center rounded-full hover:text-blue-300 transition'>
-            {user?.photoURL ?  (<img  src={user.photoURL} alt="User profile" />) : <FaCircleUser />}
+            {user?.photoURL ?  (<img  className='bg-blue-400 rounded-full p-2' src={user.photoURL} alt="User profile" />) : <FaCircleUser />}
             </button>
 
            <div>

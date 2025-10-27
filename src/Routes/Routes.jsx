@@ -6,6 +6,7 @@ import AuthLayout from "../layouts/AuthLayout";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import MyProfile from "../Pages/MyProfile";
+import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ export const router = createBrowserRouter([
   },
   {
     path: "/company/:id",
-    element: <CompanyDetails />,
+    element: <PrivateRoute><CompanyDetails />,</PrivateRoute>,
     loader: () => fetch("/companies.json"),
   },
   {
