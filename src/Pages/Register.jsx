@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { FaCamera, FaEnvelope, FaLock, FaUser } from "react-icons/fa";
 import { Link, Links, useNavigate } from "react-router";
 import { AuthContext } from '../Provider/AuthProvider';
@@ -7,6 +7,7 @@ const Register = () => {
 
     const {createUser, setUser} = use(AuthContext);
     const navigate = useNavigate();
+    const [error, setError] = useState('');
 
     
     const handleRegister = (e) => {
@@ -15,6 +16,23 @@ const Register = () => {
         const photo = e.target.photo.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
+
+        const passwordExp = /(?=.*\d).{8,}/;
+        const passwordExp1 = /(?=.*[a-z]).{8,}/;
+        const passwordExp3 = /(?=.*[A-Z]).{8,}/;
+
+        if(passwordExp.test(password) === false){
+            setError('Password must have one digit')
+            return
+        }else if (passwordExp1.test(password) === false){
+            setError("Password must have one lowercase")
+            return
+        }else if (passwordExp3.test(password) === false ){
+            setError('Password must have one uppercase')
+            return;
+        }else{
+            setError('')
+        }
 
         createUser(email, password)
         .then((result) => {
@@ -84,6 +102,9 @@ const Register = () => {
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
+            {
+                error && <p className='text-red-500'>{error}</p>
+            }
 
             <button
               type="submit"
