@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import Navbar from '../Components/Navbar';
 import CompanyDetailsPage from '../Components/CompanyDetailsPage';
+import Footer from '../Components/Footer';
 
 const CompanyDetails = () => {
 
@@ -19,6 +20,7 @@ const CompanyDetails = () => {
         <main>
             <CompanyDetailsPage details={details}></CompanyDetailsPage>
         </main>
+        <Footer></Footer>
         </div>
     );
 };
