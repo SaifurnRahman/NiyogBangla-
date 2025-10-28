@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCrl6TPfeSHRvHI7Vva466yY2AiNHy6kp8",
-  authDomain: "neyog-bangla-auth.firebaseapp.com",
-  projectId: "neyog-bangla-auth",
-  storageBucket: "neyog-bangla-auth.firebasestorage.app",
-  messagingSenderId: "1059122924261",
-  appId: "1:1059122924261:web:ef20e6615e04a608b9a20c"
-};
+  apiKey:import.meta.env.VITE_apiKey,
+  authDomain:import.meta.env.VITE_authDomain,
+  projectId:import.meta.env.VITE_projectId,
+  storageBucket:import.meta.env.VITE_storageBucket,
+  messagingSenderId:import.meta.env.VITE_messagingSenderId,
+  appId:import.meta.env.VITE_appId,
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

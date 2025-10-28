@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { use, useRef, useState } from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import { Link, Links, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
@@ -6,10 +6,11 @@ import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
  
-    const {logInUser, signInPopup, setUser} = use(AuthContext);
+    const {logInUser, signInPopup, setUser, resetEmail} = use(AuthContext);
     const navigate = useNavigate();
     const [error, setError] = useState('')
     const location = useLocation()
+    const emailRef = useRef()
 
     const provider = new GoogleAuthProvider;
 
@@ -44,6 +45,15 @@ const Login = () => {
 
         })
     }
+    const handleForgetPassword = () => {
+        const email = emailRef.current.value;
+        resetEmail(email)
+        .then(() =>{
+            alert('A password reset email is send')
+        })
+
+
+    }
 
   return (
     <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-50 px-6">
@@ -62,6 +72,7 @@ const Login = () => {
             <div className="relative">
               <FaEnvelope className="absolute left-3 top-3 text-gray-400" />
               <input
+              ref={emailRef}
                 type="email"
                 name="email"
                 placeholder="Email Address"
@@ -81,7 +92,7 @@ const Login = () => {
               />
             </div>
 
-            <div className="flex items-center justify-between">
+            <div onClick={handleForgetPassword} className="flex items-center justify-between">
               <a
                 href="#"
                 className="text-blue-600 hover:underline text-sm font-medium"

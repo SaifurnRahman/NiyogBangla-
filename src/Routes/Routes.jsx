@@ -8,6 +8,7 @@ import Register from "../Pages/Register";
 import MyProfile from "../Pages/MyProfile";
 import PrivateRoute from "./PrivateRoute";
 import About from "../Pages/About";
+import ErrorPage from "../Pages/ErrorPage";
 
 export const router = createBrowserRouter([
   {
@@ -41,5 +42,9 @@ export const router = createBrowserRouter([
 
     path: '/about',
     element: <About></About>
+  },
+  {
+    path: '/*',
+    element: <ErrorPage></ErrorPage>
   }
 ]);

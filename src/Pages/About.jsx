@@ -1,11 +1,16 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { animate, scroll } from "motion";
 import person from '../assets/student.png'
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const missionRef = useRef(null);
+
+  useEffect(() => {
+  document.title = "About| NiyogBangla";
+}, []);
 
  const handleScroll = () => {
   if (missionRef.current) {
@@ -32,14 +37,20 @@ const About = () => {
 
   return (
     <div className="bg-blue-50 min-h-screen">
+        <Helmet>
+        <title>About | NiyogBangla</title>
+        <meta
+        name="description"
+        content="Learn how NiyogBangla connects job seekers with top employers in Bangladesh."
+      />
+      </Helmet>
         <Navbar></Navbar>
- 
       <section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
         <div className="about-hero-text">
           <p className="text-blue-600 font-semibold uppercase">About</p>
           <h2 className="text-4xl font-bold text-gray-800 leading-snug mb-4">
-            We help you
+          We help you
             <br />
             connect with the organizer
           </h2>
