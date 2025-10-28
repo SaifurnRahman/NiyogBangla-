@@ -9,6 +9,8 @@ import MyProfile from "../Pages/MyProfile";
 import PrivateRoute from "./PrivateRoute";
 import About from "../Pages/About";
 import ErrorPage from "../Pages/ErrorPage";
+import Loading from '../Components/Loading';
+
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +21,7 @@ export const router = createBrowserRouter([
     path: "/company/:id",
     element: <PrivateRoute><CompanyDetails />,</PrivateRoute>,
     loader: () => fetch("/companies.json"),
+    hydrateFallbackElement: <Loading></Loading>
   },
   {
     path: "/auth",
